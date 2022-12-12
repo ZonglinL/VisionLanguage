@@ -1,6 +1,10 @@
 # VisionLanguage
 
-Used VitSTR
+Using repository https://github.com/roatienza/deep-text-recognition-benchmark
+
+Citation here:
+
+```
 @inproceedings{atienza2021vision,
   title={Vision transformer for fast and efficient scene text recognition},
   author={Atienza, Rowel},
@@ -9,3 +13,4 @@ Used VitSTR
   year={2021},
   organization={Springer}
 }
+```
