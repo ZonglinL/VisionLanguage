@@ -368,6 +368,7 @@ if __name__ == '__main__':
     opt.num_gpu = torch.cuda.device_count()
     bert = RobertaForMaskedLM(RobertaConfig()).to(device)
     bert.lm_head.decoder = torch.nn.Linear(768, 96)
+    bert = bert.load_state_dict(torch.load('Roberta.pt'))
     bert = bert.to(device)
     train(opt,bert)
     test(opt)
